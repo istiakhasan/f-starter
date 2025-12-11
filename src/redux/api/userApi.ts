@@ -7,6 +7,7 @@ const userApi = baseApi.injectEndpoints({
       query: (data) => ({
         url: "/user",
         method: "POST",
+        data
       }),
       invalidatesTags: [tagTypes.users],
     }),
